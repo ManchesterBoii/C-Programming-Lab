@@ -1,0 +1,20 @@
+Name: Huram-Abi Nzia Yotchoum
+SunetID: nziayhur
+
+1. What's const-correctness and why is it important for programmers?
+
+What’s Const-Correctness?
+- Ensures Integrity:Const-correctness ensures that functions do not modify objects when not intended, preserving the integrity of data.
+- Clarifies Intentions: It clarifies the programmer's intention to both the compiler and other developers about whether a piece of data is meant to be modified or not.
+- Facilitates Safety: By marking methods and data as `const` appropriately, it prevents accidental modifications, making the code safer and more reliable.
+Importance of Const-Correctness
+- Improves Code Safety: Prevents unintentional modifications to data, reducing bugs and making the code more predictable.
+- Enhances Code Readability: Makes the code more readable and the intentions of the programmer clear, indicating which methods can or cannot modify the object.
+- Enables Compiler Optimizations: Allows the compiler to make optimizations for objects and methods marked as `const`, potentially improving performance.
+
+
+2. Is your class const-correct? How do you know?
+
+- Getter Const-Correct: The getter method `getModel()` is marked as `const`, indicating it does not modify the object, which is correct.
+- Method Const-Correctness: Methods that do not modify the state of the object, such as `displayInfo()`, are correctly marked as `const`.
+- Overall Const-Correctness: The class adheres to const-correctness principles by correctly using `const` with methods that guarantee not to change the object, ensuring that the class is const-correct.
